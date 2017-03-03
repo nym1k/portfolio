@@ -178,7 +178,7 @@ body, input, textarea {
 .skill {
   text-align: center;
   color: #fff;
-  max-width: 300px;
+  max-width: 400px;
   margin: 20px auto;
   padding: 5% 0;
 }
@@ -189,7 +189,9 @@ body, input, textarea {
 
 .skill h3 {
   color: tomato;
-  margin-top: 20px;
+  margin: 50px 0;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px #222;
 }
 
 .portfolio {
@@ -218,6 +220,11 @@ body, input, textarea {
   background: #333;
   padding: 2%;
   color: #fff;
+}
+
+.contact-me {
+  text-align: center;
+  padding: 2% 0;
 }
 
 /* Form */
@@ -253,6 +260,8 @@ button[type="submit"] {
 footer {
   background: #ccc;
   color: #333;
+  text-align: center;
+  padding: 1% 0;
 }
 
 /* Media Queries */
