@@ -12,7 +12,6 @@ $(function(){
         function checkSize() {
           var height = $('#hero').height();
           $('.fullscreen').css('height', height);
-          console.log(height);
         }
 
         // Navbar Toggle
