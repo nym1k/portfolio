@@ -12,20 +12,20 @@
     <header>
     <nav class="nav">
       <div class="nav-left">
-        <a class="nav-item">
+        <a class="nav-item" href="#hero">
           <p>Ross King</p>
         </a>
       </div>
 
       <div class="nav-center">
-        <a class="nav-item">
+        <a class="nav-item" href="https://github.com/nym1k" title="Ross King Github Page" target="_blank">
           <span class="icon">
             <i class="fa fa-github"></i>
           </span>
         </a>
-        <a class="nav-item">
+        <a class="nav-item" href="https://www.facebook.com/rosskingweb/" title="Ross King Web Facebook Page" target="_blank">
           <span class="icon">
-            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
           </span>
         </a>
       </div>
@@ -41,13 +41,13 @@
       <!-- This "nav-menu" is hidden on mobile -->
       <!-- Add the modifier "is-active" to display it on mobile -->
       <div class="nav-right nav-menu">
-        <a class="nav-item">
+        <a class="nav-item" href="#portfolio">
           <p>Portfolio</p>
         </a>
-        <a class="nav-item">
+        <a class="nav-item" href="#about">
           <p>About</p>
         </a>
-        <a class="nav-item">
+        <a class="nav-item" href="#contact">
           <p>Contact</p>
         </a>
       </div>
@@ -63,7 +63,7 @@
     </header>
     <!-- Header End -->
 <main>
-    <section class="about">
+    <section id="about" class="about">
       <div class="flex-grid">
         <div class="col portrait">
           <img src="img/portrait.jpg" alt="Ross King Portrait" />
@@ -99,39 +99,40 @@
       </section>
       <!-- Skills End -->
       <!-- Portfolio -->
-            <section class="portfolio container">
+            <section id="portfolio" class="portfolio container">
               <div class="flex-grid">
-                <div class="col project">
+                <a href="http://nlowrieart.co.uk" title="Naomi Lowrie Art" target="_blank "class="col project">
                   <span class="overlay">
                     <h2>Naomi Lowrie Art</h2>
                     <p class="subtitle">A custom website I built for an artist in Devon.</p>
                   </span>
-                </div>
-                <div class="col project">
+                </a>
+                <a class="col project">
                   <span class="overlay">
                     <h2>Thing 2</h2>
                     <p class="subtitle">Coming Soon</p>
                   </span>
-                </div>
-                <div class="col project">
+                </a>
+                <a class="col project">
                   <span class="overlay">
                     <h2>Thing 3</h2>
                     <p class="subtitle">Coming Soon</p>
                   </span>
-                </div>
+                </a>
               </div>
             </section>
             <!-- Portfolio End -->
             <!-- Contact -->
-            <section class="contact flex-grid">
-              <div id="form-messages"></div>
+            <section id="contact" class="contact flex-grid">
                 <div class="col contact-me">
                   <p>I'm currently available for freelance work.</p><br>
                   <p>If you have a project, or need help with a website, please get in touch.</p>
                 </div>
 
                 <div class="col">
-                  <form id="ajax-contact" action="mailer.php" method="post">
+                  <div id="form-messages"></div>
+                  <form id="ajax-contact" action="https://formspree.io/your@email.com"
+      method="POST">
                       <input type="text" name="name" id="name" class="input" placeholder="Name" required />
                       <input type="email" name="email" id="email" class="input" placeholder="Email" required />
                       <textarea name="message" id="message" rows="3" class="textarea" placeholder="Message" required></textarea>

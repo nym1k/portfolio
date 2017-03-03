@@ -25,12 +25,21 @@ body, input, textarea {
   font-family: 'Work Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
 /* Nav Styles */
 
 .nav {
   position: fixed;
   width: 100%;
-  background: none;
+  background:  rgba(0,0,0,0);
   display: flex;
   min-height: 3.5rem;
   color: #fff;
@@ -114,6 +123,14 @@ body, input, textarea {
   flex-grow: 0;
   flex-shrink: 0;
   align-items: center;
+}
+
+.nav-item:hover {
+  color: tomato;
+}
+
+.dark-header {
+  background:  rgba(0,0,0,0.8);
 }
 
 /* Hero */
@@ -213,6 +230,12 @@ body, input, textarea {
   padding-bottom: 0;
 }
 
+.project:nth-of-type(1) {
+  background: url('../img/naomi.png');
+  background-position: center;
+  background-size: cover;
+}
+
 .overlay {
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -234,30 +257,55 @@ body, input, textarea {
 
 /* Form */
 
-form {
+form,
+#form-messages {
   max-width: 500px;
   margin: 2% auto;
 }
 
 input,
-textarea {
+textarea,
+button[type="submit"] {
   width: 100%;
   padding: 2%;
-  margin-bottom: 10px;
   border-radius: 3px;
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid tomato;
+  border: 1px solid #ccc;
 }
 
 button[type="submit"] {
-  width: 100%;
-  padding: 2%;
   color: #fff;
   background: tomato;
+  cursor: pointer;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  border-radius: 4px;
 }
 
 /* Footer */
@@ -283,7 +331,7 @@ footer {
       right: 0;
       top: 100%;
       position: absolute;
-      background: #333;
+      background:  rgba(0,0,0,0.8);
   }
 
   .nav-menu .nav-item {
