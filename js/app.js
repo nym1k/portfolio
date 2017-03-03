@@ -77,7 +77,7 @@ $(function(){
               setTimeout(function(){
                 $(formMessages).removeClass('success');
                 $(formMessages).text("");
-              }, 3000);
+              }, 6000);
 
         			// Clear the form.
         			$('#name').val('');
@@ -99,7 +99,7 @@ $(function(){
               setTimeout(function(){
                 $(formMessages).removeClass('error');
                 $(formMessages).text("");
-              }, 5000);
+              }, 6000);
         	   }
            });
       	});
