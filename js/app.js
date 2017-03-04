@@ -19,14 +19,22 @@ $(function(){
           $('.nav-menu').toggleClass('open');
         });
 
+        // Collapse Mobile Menu on button click
+        $('.nav-menu a').click(function (e) {
+          if (window.innerWidth < 992) {
+            $('.nav-menu').toggleClass('open');
+          }
+        });
+
         // Smooth Scroll
         $('a[href*="#"]:not([href="#"])').click(function() {
           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
+              var menuHeight = $('.nav').height();
               $('html, body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top - menuHeight
               }, 1000);
               return false;
             }

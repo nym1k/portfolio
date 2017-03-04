@@ -200,7 +200,7 @@ a:visited {
 }
 
 .skills {
-  padding: 0;
+  padding: 2% 0;
   background: #333;
 }
 
@@ -218,14 +218,16 @@ a:visited {
 
 .skill h3 {
   color: tomato;
-  margin: 50px 0;
+  margin: 30px 0;
   font-size: 1.8rem;
   text-shadow: 0 0 10px #222;
 }
 
 .portfolio {
   background: #333;
+  color: #ccc;
   max-width: 100%;
+  padding: 5% 0;
 }
 
 .project {
@@ -254,17 +256,19 @@ a:visited {
 }
 
 .contact {
-  background: #333;
+  background: #ccc;
   padding: 2%;
   color: #fff;
 }
 
 .contact-me {
   text-align: center;
-  padding: 2% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #333;
+  padding: 50px 0%;
+  /*background: pink;*/
 }
 
 /* Form */
@@ -323,8 +327,8 @@ button[type="submit"] {
 /* Footer */
 
 footer {
-  background: #ccc;
-  color: #333;
+  background: #333;
+  color: #ccc;
   text-align: center;
   padding: 1% 0;
 }
@@ -363,5 +367,9 @@ footer {
 
   .about-me {
     padding-left: 10%;
+  }
+
+  .contact-me {
+    padding-right: 5%;
   }
 }
