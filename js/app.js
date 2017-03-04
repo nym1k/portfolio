@@ -19,9 +19,6 @@ $(function(){
           $('.nav-menu').toggleClass('open');
         });
 
-        // Scrollspy
-          gumshoe.init();
-
         // Smooth Scroll
         $('a[href*="#"]:not([href="#"])').click(function() {
           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -41,8 +38,9 @@ $(function(){
           var scroll = $(window).scrollTop();
           var height = $('#hero').height();
           var width = $(window).width();
+          var menuHeight = $('.nav').height();
 
-          if (scroll >= height) {
+          if (scroll >= height - menuHeight) {
             $(".nav").addClass("dark-header");
           } else {
             $(".nav").removeClass("dark-header");
