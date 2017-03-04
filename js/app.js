@@ -19,9 +19,6 @@ $(function(){
           $('.nav-menu').toggleClass('active');
         });
 
-        // Scrollspy
-      //  $('body').scrollspy({ target: '.nav-menu' });
-
         // Smooth Scroll
         $('a[href*="#"]:not([href="#"])').click(function() {
           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
