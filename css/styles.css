@@ -19,9 +19,13 @@
 
 body {
   background: #333;
+  font-size: 16px;
 }
 
-body, input, textarea {
+body,
+input,
+textarea,
+button[type="submit"] {
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -181,7 +185,7 @@ a:visited {
 .portrait {
   max-width: 100%;
   height: auto;
-  flex-grow: 0;
+  flex-basis: 100px;
 }
 
 .portrait img {
@@ -196,7 +200,7 @@ a:visited {
 
 .about-me {
   padding: 2% 0;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 }
 
 .skills {
@@ -236,10 +240,11 @@ a:visited {
   background-size: cover;
   /*border: 3px solid black;*/
   min-height: 300px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 0 5px;
+  margin: 5% auto;
   padding-bottom: 0;
 }
 
@@ -285,6 +290,7 @@ button[type="submit"] {
   width: 100%;
   padding: 2%;
   border-radius: 3px;
+  font-size: inherit;
 }
 
 input,
@@ -366,10 +372,15 @@ footer {
   }
 
   .about-me {
-    padding-left: 10%;
+    margin-left: 2%;
+    flex-grow: 2;
   }
 
   .contact-me {
     padding-right: 5%;
+  }
+
+  .project {
+    margin: auto .5%;
   }
 }
