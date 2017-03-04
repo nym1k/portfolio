@@ -129,6 +129,10 @@ a:visited {
   color: tomato;
 }
 
+.nav-item.active p {
+  color: tomato;
+}
+
 .dark-header {
   background:  rgba(0,0,0,0.8);
 }
@@ -347,7 +351,7 @@ footer {
     font-size: 2rem;
   }
 
-  .active {
+  .open {
     display: block;
   }
 }

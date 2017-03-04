@@ -16,8 +16,11 @@ $(function(){
 
         // Navbar Toggle
         $('.nav-toggle').on('click', function(){
-          $('.nav-menu').toggleClass('active');
+          $('.nav-menu').toggleClass('open');
         });
+
+        // Scrollspy
+          gumshoe.init();
 
         // Smooth Scroll
         $('a[href*="#"]:not([href="#"])').click(function() {

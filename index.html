@@ -10,49 +10,49 @@
   </head>
   <body>
     <header>
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="#hero">
-          <p>Ross King</p>
-        </a>
-      </div>
+      <!-- Nav Bar -->
+      <nav class="nav" data-gumshoe-header>
+        <div class="nav-left">
+          <a class="nav-item" href="#hero">
+            <p>Ross King</p>
+          </a>
+        </div>
 
-      <div class="nav-center">
-        <a class="nav-item" href="https://github.com/nym1k" title="Ross King Github Page" target="_blank">
-          <span class="icon">
-            <i class="fa fa-github"></i>
-          </span>
-        </a>
-        <a class="nav-item" href="https://www.facebook.com/rosskingweb/" title="Ross King Web Facebook Page" target="_blank">
-          <span class="icon">
-            <i class="fa fa-facebook"></i>
-          </span>
-        </a>
-      </div>
+        <div class="nav-center">
+          <a class="nav-item" href="https://github.com/nym1k" title="Ross King Github Page" target="_blank">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          <a class="nav-item" href="https://www.facebook.com/rosskingweb/" title="Ross King Web Facebook Page" target="_blank">
+            <span class="icon">
+              <i class="fa fa-facebook"></i>
+            </span>
+          </a>
+        </div>
 
-      <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-      <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-      <span class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
 
-      <!-- This "nav-menu" is hidden on mobile -->
-      <!-- Add the modifier "is-active" to display it on mobile -->
-      <div class="nav-right nav-menu">
-        <a class="nav-item" href="#portfolio">
-          <p>Portfolio</p>
-        </a>
-        <a class="nav-item" href="#about">
-          <p>About</p>
-        </a>
-        <a class="nav-item" href="#contact">
-          <p>Contact</p>
-        </a>
-      </div>
-    </nav>
-
+        <div class="nav-right nav-menu" data-gumshoe>
+          <a class="nav-item" href="#about">
+            <p>About</p>
+          </a>
+          <a class="nav-item" href="#skills">
+            <p>Skills</p>
+          </a>
+          <a class="nav-item" href="#portfolio">
+            <p>Portfolio</p>
+          </a>
+          <a class="nav-item" href="#contact">
+            <p>Contact</p>
+          </a>
+        </div>
+      </nav>
+      <!-- Nav Bar End -->
       <!-- Hero -->
       <div class="fullscreen">
         <div id="hero" data-vide-bg="mp4: img/coding.mp4, poster: img/coding.jpg" data-vide-options="posterType: jpg, loop: false, muted: true, position: 50% 50%">
@@ -80,7 +80,7 @@
     </section>
 
     <!-- Skills -->
-      <section class="skills">
+      <section id="skills" class="skills">
         <div class="flex-grid">
           <div class="col skill">
             <i class="fa fa-paint-brush"></i>
@@ -156,6 +156,7 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
+    <script src="js/gumshoe.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
