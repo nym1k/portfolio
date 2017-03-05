@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ross King | Front End Web Developer</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/3cc0a724ba.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -66,93 +66,99 @@
 <main>
     <!-- Skills -->
       <section id="skills" class="skills">
-        <div class="flex-grid">
-          <div class="col skill">
-            <i class="fa fa-paint-brush"></i>
-            <h3 class="title">Design</h3>
-            <p>I like to keep my websites simple, stripping away anything unnecessary to focus on what’s important to get your message across.</p>
-          </div>
-          <div class="col skill">
-            <i class="fa fa-code"></i>
-            <h3 class="title">Develop</h3>
-            <p>I use the latest technologies to bring your website to life, adding interactive features and making your website run on all modern devices.</p>
-          </div>
-          <div class="col skill">
-            <i class="fa fa-server"></i>
-            <h3 class="title">Deploy</h3>
-            <p>I can help you choose hosting, aquire a domain name, and get your website online.</p>
+        <div class="container">
+          <div class="flex-grid">
+            <div class="col skill">
+              <i class="fa fa-paint-brush fa-5x"></i>
+              <h3 class="title">Design</h3>
+              <p>I like to keep my websites simple, stripping away anything unnecessary to focus on what’s important to get your message across.</p>
+            </div>
+            <div class="col skill">
+              <i class="fa fa-code fa-5x"></i>
+              <h3 class="title">Develop</h3>
+              <p>I use the latest technologies to bring your website to life, adding interactive features and making your website run on all modern devices.</p>
+            </div>
+            <div class="col skill">
+              <i class="fa fa-server fa-5x"></i>
+              <h3 class="title">Deploy</h3>
+              <p>I can help you choose hosting, aquire a domain name, and get your website online.</p>
+            </div>
           </div>
         </div>
       </section>
       <!-- Skills End -->
       <!-- About -->
       <section id="about" class="about">
-        <div class="flex-grid">
-          <div class="col portrait">
-            <img src="img/portrait.jpg" alt="Ross King Portrait" />
-          </div>
-          <div class="col about-me">
-              <p class="title">Hi, I'm Ross</p>
-              <p>A self-taught web designer / developer based in Cambridgeshire, UK.</p><br>
-              <p>I've been studying online for the past few years using resources such as Treehouse, FreeCodeCamp, Codecademy, CodeSchool, Udemy, and many more.</p><br>
-              <p>I have experience building custom responsive websites with HTML5, CSS3, and JS/jQuery, as well as experience with front end frameworks, CLI and Git.</p><br>
-              <p>Currently I'm focusing my studies on understanding the more advanced side of JavaScript, as well as ES6, Sass, PHP, and MySQL.</p>
-              <p>My aim is to eventually become a full stack JavaScript developer as I move on to studying MongoDB, Express, ReactJS, Node.JS, and Webpack.</p>
+        <div class="container">
+          <div class="flex-grid">
+            <div class="col portrait">
+              <img src="img/portrait.jpg" alt="Ross King Portrait" />
+            </div>
+            <div class="col about-me">
+                <h2 class="title">Hi, I'm Ross</h2>
+                <p>A self-taught web designer / developer based in Cambridgeshire, UK.</p><br>
+                <p>I've been studying online for the past few years using resources such as Treehouse, FreeCodeCamp, Codecademy, CodeSchool, Udemy, and many more.</p><br>
+                <p>I have experience building custom responsive websites with HTML5, CSS3, and JS/jQuery, as well as experience with front end frameworks, CLI and Git.</p><br>
+                <p>Currently I'm focusing my studies on understanding the more advanced side of JavaScript, as well as ES6, Sass, PHP, and MySQL.</p><br>
+                <p>My aim is to eventually become a full stack JavaScript developer as I move on to studying MongoDB, Express, ReactJS, Node.JS, and Webpack.</p>
+            </div>
           </div>
         </div>
       </section>
       <!-- About End -->
       <!-- Portfolio -->
-            <section id="portfolio" class="portfolio">
-              <div class="flex-grid">
-                <a href="http://nlowrieart.co.uk" title="Naomi Lowrie Art" target="_blank "class="col project">
-                  <span class="overlay">
-                    <h2>Naomi Lowrie Art</h2>
-                    <p>A custom website I built for an artist in Devon.</p>
-                  </span>
-                </a>
-                <a class="col project">
-                  <span class="overlay">
-                    <h2>Thing 2</h2>
-                    <p>Coming Soon</p>
-                  </span>
-                </a>
-                <a class="col project">
-                  <span class="overlay">
-                    <h2>Thing 3</h2>
-                    <p>Coming Soon</p>
-                  </span>
-                </a>
-              </div>
-            </section>
-            <!-- Portfolio End -->
-            <!-- Contact -->
-            <section id="contact" class="contact">
-              <div class="flex-grid">
-                <div class="col contact-me">
-                  <p>I'm currently available for freelance work.</p><br>
-                  <p>If you have a project, or need help with a website, please get in touch.</p>
-                </div>
-                <div class="col">
-                  <div id="form-messages"></div>
-                  <form id="ajax-contact" action="https://formspree.io/sleeping.stars@gmail.com" method="POST">
-                      <input type="text" name="name" id="name" class="input" placeholder="Name" required />
-                      <input type="email" name="email" id="email" class="input" placeholder="Email" required />
-                      <textarea name="message" id="message" rows="3" class="textarea" placeholder="Message" required></textarea>
-                      <button type="submit" class="button is-primary">Send</button>
-                  </form>
-                </div>
-              </div>
-            </section>
-            <!-- Contact End -->
-            <footer>
-              <div class="columns">
-                <div class="column">
-                  <p>Ross King 2017</p>
-                </div>
-              </div>
-            </footer>
-          </main>
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="flex-grid">
+            <a href="http://nlowrieart.co.uk" title="Naomi Lowrie Art" target="_blank "class="col project">
+              <span class="overlay">
+                <p>A custom site for an artist in Devon. Dynamically retrieves her instagram images and displays them in a grid.</p>
+              </span>
+            </a>
+            <a href="http://countlessskies.com" title="Countless Skies Official Homepage" class="col project">
+              <span class="overlay">
+                <p>A homepage for a heavy metal band, with a clean and simple design. The blockquotes are laid out using flexbox.</p>
+              </span>
+            </a>
+            <a class="col project">
+              <h2>Coming Soon</h2>
+              <span class="overlay">
+                <p>I will shortly be updating this space with my next project.</p>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio End -->
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="flex-grid">
+            <div class="col contact-me">
+              <p>I'm currently available for freelance work.</p><br>
+              <p>If you have a project, or need help with a website, please get in touch.</p>
+            </div>
+            <div class="col">
+              <div id="form-messages"></div>
+              <form id="ajax-contact" action="https://formspree.io/sleeping.stars@gmail.com" method="POST">
+                  <input type="text" name="name" id="name" class="input" placeholder="Name" required />
+                  <input type="email" name="email" id="email" class="input" placeholder="Email" required />
+                  <textarea name="message" id="message" rows="3" class="textarea" placeholder="Message" required></textarea>
+                  <button type="submit" class="button is-primary">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact End -->
+      <footer>
+        <div class="columns">
+          <div class="column">
+            <p>Ross King 2017</p>
+          </div>
+        </div>
+      </footer>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>

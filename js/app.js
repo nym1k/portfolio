@@ -17,12 +17,14 @@ $(function(){
         // Navbar Toggle
         $('.nav-toggle').on('click', function(){
           $('.nav-menu').toggleClass('open');
+          $('.nav-toggle').toggleClass('cross');
         });
 
         // Collapse Mobile Menu on button click
         $('.nav-menu a').click(function (e) {
           if (window.innerWidth < 992) {
             $('.nav-menu').toggleClass('open');
+            $('.nav-toggle').toggleClass('cross');
           }
         });
 
@@ -45,7 +47,6 @@ $(function(){
         $(window).scroll(function() {
           var scroll = $(window).scrollTop();
           var height = $('#hero').height();
-          var width = $(window).width();
           var menuHeight = $('.nav').height();
 
           if (scroll >= height - menuHeight) {
