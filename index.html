@@ -2,9 +2,14 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+    <title>Ross King | Front End Web Developer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ross King | Front End Web Developer</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Ross King | Front End Web Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://rossking.co.uk" />
+    <meta property="og:image" content="http://rossking.co.uk/img/portrait.jpg" />
     <link rel="stylesheet" href="https://use.fontawesome.com/3cc0a724ba.css">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -69,7 +74,7 @@
         <div class="container">
           <div class="flex-grid">
             <div class="col skill">
-              <i class="fa fa-paint-brush fa-5x"></i>
+              <i class="fa fa-pencil fa-5x"></i>
               <h3 class="title">Design</h3>
               <p>I like to keep my websites simple, stripping away anything unnecessary to focus on what’s important to get your message across.</p>
             </div>
@@ -110,20 +115,19 @@
       <section id="portfolio" class="portfolio">
         <div class="container">
           <div class="flex-grid">
-            <a href="http://nlowrieart.co.uk" title="Naomi Lowrie Art" target="_blank "class="col project">
+            <a href="http://nlowrieart.co.uk" title="Naomi Lowrie Art" target="_blank" class="col project">
               <span class="overlay">
                 <p>A custom site for an artist in Devon. Dynamically retrieves her instagram images and displays them in a grid.</p>
               </span>
             </a>
-            <a href="http://countlessskies.com" title="Countless Skies Official Homepage" class="col project">
+            <a href="https://nym1k.github.io/countless-skies" title="Countless Skies Official Homepage" target="_blank" class="col project">
               <span class="overlay">
                 <p>A homepage for a heavy metal band, with a clean and simple design. The blockquotes are laid out using flexbox.</p>
               </span>
             </a>
-            <a class="col project">
-              <h2>Coming Soon</h2>
+            <a href="https://nym1k.github.io/weather-app" title="FCC Weather App" target="_blank" class="col project">
               <span class="overlay">
-                <p>I will shortly be updating this space with my next project.</p>
+                <p>An app that shows you the weather in your current location. I made this using jQuery as part of the freecodecamp curriculum.</p>
               </span>
             </a>
           </div>
@@ -136,7 +140,8 @@
           <div class="flex-grid">
             <div class="col contact-me">
               <p>I'm currently available for freelance work.</p><br>
-              <p>If you have a project, or need help with a website, please get in touch.</p>
+              <p>If you have a project, or need help with a website, please get in touch.</p><br>
+              <p><i class="fa fa-phone" aria-hidden="true"></i> - 07926606949 / <i class="fa fa-envelope" aria-hidden="true"></i> - info@rossking.co.uk</p>
             </div>
             <div class="col">
               <div id="form-messages"></div>
@@ -163,5 +168,15 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vide/0.5.1/jquery.vide.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93120703-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
